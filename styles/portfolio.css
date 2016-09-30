@@ -1,0 +1,117 @@
+/* GOOGLE FONTS */
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+/* BODY */
+body {
+	margin: 0; 
+	font-family: "Raleway", arial, serif;
+	font-size: 62.5%;
+}
+ 
+	/* HEADINGS */
+	h1, h2, h3 {
+		margin: 0;
+	}
+
+	/* LINKS */
+	a, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+
+/* HEADER */
+header {
+	/* BACKGROUND */
+	background-image: url("../img/macbook.jpg");
+	background-size: cover;
+	height: 100vh;
+	/* FLEX */
+	color: white;
+
+	margin-bottom: 50px;
+}
+
+	.main-title {
+		clear: both;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 85vh;
+		text-align: center;
+	}
+
+	/* DOWN ARROW ICON */
+	.down-arrow {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		color: white;
+		padding-right: 40px;
+	}
+
+	/* HEADER HEADINGS */
+	header h1,h3 {
+		margin: 5px;
+	}
+
+	header h1{
+		font-size: 4.5em;
+	}
+
+	header h2, h3 {
+		font-size: 2.5em;
+	}
+
+/* NAVIGATION */
+nav {
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+	padding: 10px;
+}
+
+/* NAV UL */
+ul {
+	float: right;
+	list-style-type: none; 
+}
+
+ul li {
+	display: inline-flex;
+	font-size: 2.0em;
+	padding: 5px 15px;
+}
+
+ul li a, ul li a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+}
+
+/* NAV TITLE (NAME) */
+.nav-title {
+	font-size: 4.0em;
+	padding: 5px;
+	float: left;
+}
+
+
+/* SECTIONS */
+section {
+	width: 100%;
+}
+
+/* BIO SECTION */
+.bio p {
+	font-size: 1.8em;
+	padding: 10px;
+}
+
+
+section.portfolio {
+	background-color: lightgrey;
+}
