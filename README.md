@@ -7,4 +7,6 @@ To begin with I started created the front end of the Portfolio using HTML/CSS/Ja
 
 I will later implement the back end using Node.js and other technologies when I have furthered my learning on those subjects.
 
+Link: https://michaelgee22.github.io/portfolio/
+
 # unfinished
