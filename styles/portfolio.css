@@ -1,6 +1,8 @@
 /* GOOGLE FONTS */
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
 /* BODY */
 body {
 	margin: 0; 
@@ -19,6 +21,10 @@ body {
 		text-decoration: none;
 	}
 
+.clear {
+	clear: both;
+}
+
 /* HEADER */
 header {
 	/* BACKGROUND */
@@ -32,12 +38,11 @@ header {
 }
 
 	.main-title {
-		clear: both;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 85vh;
+		height: 90vh;
 		text-align: center;
 	}
 
@@ -65,22 +70,26 @@ header {
 
 /* NAVIGATION */
 nav {
-	width: 90%;
-	margin: 0 auto;
+	overflow: hidden;
+	position: fixed;
+	transition-duration: 1s;
+	width: 100%;
 	color: white;
-	padding: 10px;
+	padding: 15px;
 }
 
 /* NAV UL */
 ul {
 	float: right;
 	list-style-type: none; 
+	padding-right: 45px;
+	padding-top: 4px;
 }
 
 ul li {
-	display: inline-flex;
+	display: inline-block;
 	font-size: 2.0em;
-	padding: 5px 15px;
+	padding: 7px 15px;
 }
 
 ul li a, ul li a:visited {
@@ -92,10 +101,53 @@ ul li a:hover {
 	text-decoration: underline;
 }
 
+ul.topnav.responsive li {
+	padding-left: 25px;
+}
+
+/* HAMBURGER BUTTON HIDE */
+.icon {
+	display: none;
+}
+
+/* NAVIGATION MEDIA QUERIES */
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:807px) {
+  ul.topnav li:not(:last-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:807px) {
+  ul.topnav.responsive {
+  	position: relative;
+  	width: 100%;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 55px;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+
 /* NAV TITLE (NAME) */
 .nav-title {
 	font-size: 4.0em;
 	padding: 5px;
+	padding-left:20px; 
 	float: left;
 }
 
@@ -105,13 +157,94 @@ section {
 	width: 100%;
 }
 
+/* SECTION HEADINGS */
+.section-heading {
+	color: black;
+  	font-family: 'Cardo', serif;
+  	font-size: 1.5em;
+  	font-weight: normal;
+  	font-style: italic;
+  	letter-spacing: 0.1em;
+  	line-height: 2.2em;
+  	text-align: center;
+  	padding-bottom: 45px;
+}
+em {
+  font-family: 'EB Garamond', serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style:normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  
+  &::before, &::after {
+  content: "§";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+	opacity: 0.2;
+  margin: 0 0.6em;
+  font-size: 0.5em;
+	}
+}
+
 /* BIO SECTION */
-.bio p {
-	font-size: 1.8em;
+.bio {
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+#bio-text {
+	float:right;
+	width: 50%;
+	text-align: center;
+	padding-right: 10px;
+}
+
+#bio-text p {
+	font-size: 2.0em;
 	padding: 10px;
 }
 
+#bio-pic {
+	width: 450px;
+	max-width: 80%;
+	padding: 25px;
+	border-radius: 50%;
+	float: left;
+}
 
-section.portfolio {
+/* BIO SECTION MEDIA QUERIES */
+@media (max-width:1025px) {
+	#bio-pic {
+		width: 350px;
+	}
+}
+
+@media (max-width:825px) {
+	.bio {
+		text-align: center;
+	}
+
+	#bio-text {
+		width: 100%;
+		float: none;
+	}
+
+	#bio-pic {
+		width: 350px;
+		float: none;
+	}
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+	overflow: hidden;
+	padding-top: 50px;
 	background-color: lightgrey;
 }
