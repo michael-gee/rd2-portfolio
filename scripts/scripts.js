@@ -14,7 +14,26 @@ $(document).ready(function(){
           $('nav').css('background-color', 'transparent');
        }
    });
+
+
+// ANCHOR FUNCTION 
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top-140
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
+
+
+}); //document.ready function end
 
 // HAMBURGER MENU FUNCTION
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -26,19 +45,3 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
-// ANCHOR FUNCTION 
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
