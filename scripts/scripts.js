@@ -10,10 +10,6 @@ $(document).ready(function(){
             'background-color': 'rgba(34,34,34,0.9)',
             'position': 'fixed'
           });
-         
-         $('.fa-angle-down').css({
-            'display": "none"
-          });
        } else {
           $('nav').css('background-color', 'transparent');
        }
