@@ -5,11 +5,11 @@
 
 /* BODY */
 body {
-	margin: 0; 
+	margin: 0;
 	font-family: "Raleway", arial, serif;
 	font-size: 62.5%;
 }
- 
+
 	/* HEADINGS */
 	h1, h2, h3 {
 		margin: 0;
@@ -46,15 +46,6 @@ header {
 		text-align: center;
 	}
 
-	/* DOWN ARROW ICON */
-	.down-arrow {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		color: white;
-		padding-right: 40px;
-	}
-
 	/* HEADER HEADINGS */
 	header h1,h3 {
 		margin: 5px;
@@ -81,7 +72,7 @@ nav {
 /* NAV UL */
 ul {
 	float: right;
-	list-style-type: none; 
+	list-style-type: none;
 	padding-right: 45px;
 	padding-top: 4px;
 }
@@ -147,7 +138,7 @@ ul.topnav.responsive li {
 .nav-title {
 	font-size: 4.0em;
 	padding: 5px;
-	padding-left:20px; 
+	padding-left:20px;
 	float: left;
 }
 
@@ -185,7 +176,7 @@ em {
   font-style:normal;
   padding-top: 0.1em;
   text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-  
+
   &::before, &::after {
   content: "§";
   display: inline-block;
@@ -231,15 +222,15 @@ em {
 /* BIO SECTION MEDIA QUERIES */
 @media (min-width: 1200px) {
 	#bio-pic {
-		margin-right: 5%; 
+		margin-right: 5%;
 	}
 }
 
 @media (max-width: 1065px) {
 	#bio-pic {
-		margin-right: 2%; 
+		margin-right: 2%;
 		width: 350px;
-		padding-top: 80px;	
+		padding-top: 80px;
 	}
 }
 
@@ -266,7 +257,7 @@ em {
 /* PORTFOLIO SECTION */
 .portfolio {
 	overflow: hidden;
-	padding-top: 70px;
+	padding-top: 60px;
 	padding-bottom: 50px;
 	background-color: lightgrey;
 }
@@ -300,12 +291,75 @@ em {
     margin-right: 43px;
 }
 
-/* PORTFOLIO SECTION MEDIA QUERIES */ 
+/* PORTFOLIO SECTION MEDIA QUERIES */
 
 
 /* CONTACT SECTION */
 .contact {
 	padding-top: 70px;
+}
+
+#email-form {
+	width: 70%;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	width: 90%;
+	padding: 15px;
+	margin: 15px;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+textarea {
+	display: block;
+	width: 90%;
+	padding: 15px;
+	margin: 15px;
+	font-size: 1.8em;
+	text-align: center;
+	font-family: "Raleway", arial;
+}
+
+
+#submit {
+	margin: 0 auto;
+	margin-bottom: 70px;
+	cursor: pointer;
+	background-color: lightgrey;
+	border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+	padding-top: 35px;
+	background-color: lightgrey;
+	max-width: 100%;
+	height: 140px;
+	text-align: center;
+}
+
+.social {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.social:hover {
+	color: black;
+}
+
+#footer-text {
+	font-size: 1.7em;
+	padding-top: 17px;
+}
+
+/* FOOTER ICONS MEDIA QUERIES */
+@media (max-width: 550px) {
+	.social {
+		padding: 5px;
+	}
 }
 
 
