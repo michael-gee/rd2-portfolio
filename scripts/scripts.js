@@ -1,9 +1,9 @@
 //NAVBAR FIXED FUNCTION
-$(document).ready(function(){       
+$(document).ready(function(){
    var scroll_start = 0;
    var startchange = $('nav');
    var offset = startchange.offset();
-   $(document).scroll(function() { 
+   $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
           $('nav').css({
@@ -15,9 +15,7 @@ $(document).ready(function(){
        }
    });
 
-
-// ANCHOR FUNCTION 
-$(function() {
+// ANCHOR FUNCTION
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -30,8 +28,6 @@ $(function() {
       }
     }
   });
-});
-
 
 }); //document.ready function end
 
