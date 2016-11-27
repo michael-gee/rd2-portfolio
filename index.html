@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Michael Gee's Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/portfolio.css">
 </head>
 <!-- BODY -->
@@ -13,10 +13,10 @@
 	<nav>
 		<h2 class="nav-title">Michael Gee</h2>
 		<ul class="topnav" id="myTopnav">
-			<li><a href="/portfolio/#top">Home</a></li>
+			<li><a href="#">Home</a></li>
 			<li><a href="/portfolio/#one">Bio</a></li>
 			<li><a href="/portfolio/#two">Portfolio</a></li>
-			<li><a>Contact</a></li>
+			<li><a href="/portfolio/#three">Contact</a></li>
 			<li class="icon">
     			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   			</li>
@@ -28,9 +28,6 @@
 		<h1>Full Stack Web Developer</h1>
 		<h3>My passion is creating fully functional, modern, and responsive web applications.</h3>
 	</div>
-
-	<!-- DOWN ARROW ICON -->
-	<a href="/portfolio/#one"><i class="fa fa-angle-down down-arrow fa-5x" aria-hidden="true"></i></a>
 
 </header> <!-- HEADER END -->
 
@@ -49,13 +46,13 @@
 
 	<div id="bio-text">
 		<p>My name is Michael Gee and I am an aspiring Full Stack Web Developer.</p>
-		<p>My goal is to get a job as a Junior Developer and build my own web applications to further my learning process. </p>	
+		<p>My goal is to get a job as a Junior Developer and build my own web applications to further my learning process. </p>
 		<p>I am currently enrolled in FCC's (Free Code Camp) ciriculum as well as other online resources such as TreeHouse, Eloquent JS, ect to learn and grow as a developer.</p>
 		<p>I am 20 years old from Hamilton, Ontario.</p>
 		<p>Interests oustide of coding include: Sports, (especially Football, Hockey, and Basketball) Video Games, Reading, and Others</p>
 	</div>
 
-	
+
 </section> <!-- BIO SECTION END -->
 
 <div class="clear"></div>
@@ -112,7 +109,7 @@
 			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
 		</div><!-- ROW 3 END -->
 	</div>
-	
+
 </section><!-- PORTFOLIO SECTION END -->
 
 <div class="clear"></div>
@@ -120,13 +117,38 @@
 <!-- CONTACT SECTION -->
 <section class="contact" id="three">
 
-		<h2 class="section-heading">
+	<h2 class="section-heading">
 		<em>Contact</em>
 	</h2>
 
-	<p class="section-intro"></p>
+	<p style="padding-bottom: 15px" class="section-intro">Have any questions or interested in hiring me? Please fill out this short email form to get in touch!</p>
+
+	<div id="email-form">
+		<form id="contactMe" action="MAILTO:michaelgee221@gmail.com" method="post" enctype="text/plain">
+			<input type="text" name="name" placeholder="Name" id="top-input">
+			<input type="email" name="email" placeholder="Email">
+			<textarea name="message" rows="8" form="contactMe" placeholder="Type Your Message Here..."></textarea>
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
 
 </section>
+
+<!-- FOOTER -->
+	<!-- SOCIAL MEDIA ICONS -->
+	<footer>
+		<a href="https://github.com/michaelgee22" target="_blank" class="social"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+		<a href="http://codepen.io/michaelg22/" target="_blank" class="social"><i class="fa fa-codepen fa-5x" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/in/michael-gee" target="_blank" class="social"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a>
+		<a href="https://www.freecodecamp.com/michaelgee22" target="_blank" class="social"><i class="fa fa-free-code-camp fa-5x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/michaelgee7/" target="_blank" class="social"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/michaelgee7" target="_blank" class="social"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+
+		<p id="footer-text">
+			Hand Coded by Michael Gee
+		</p>
+
+	</footer>
 
 <!-- jQUERY CDN -->
 <script
