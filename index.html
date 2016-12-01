@@ -3,6 +3,7 @@
 <head>
 	<title>Michael Gee's Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="styles/lity.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/portfolio.css">
 </head>
 <!-- BODY -->
@@ -25,7 +26,7 @@
 
 	<div class="main-title">
 		<h2>Hello, my name is Michael Gee</h2>
-		<h1>Full Stack Web Developer</h1>
+		<h1>Aspiring Full Stack Developer</h1>
 		<h3>My passion is creating fully functional, modern, and responsive web applications.</h3>
 	</div>
 
@@ -63,50 +64,54 @@
 		<em>Portfolio</em>
 	</h2>
 
-	<p class="section-intro">These are some of my past projects either coming from ciriculum challenges or just practice applications to learn.</p>
+	<p style="margin:0; padding:0" class="section-intro">These are some of my past projects either coming from ciriculum challenges or just practice applications to learn.</p>
+	<p class="section-intro">Click the links to get live previews of my projects. Full project and code can be found on my <a href="https://github.com/michaelgee22" target="_blank">Github</a>.</p>
 
 	<!-- ROW 1 -->
 	<div class="row">
 		<div class="project left-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="https://michaelgee22.github.io/portfolio-rd/" data-lity class="project"><img src="img/portfolio-rd.PNG" alt="Rough Draft Portfolio"></a>
+			<div class="overlay">
+				<span class="plus">+</span>
+			</div>
 		</div>
 
 		<div class="project center-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="https://michaelgee22.github.io/wikipedia-search/" data-lity class="project"><img src="img/wikipedia.PNG" alt="Wikipedia Viewer"></a>
 		</div>
 
 		<div class="project right-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="https://michaelgee22.github.io/pomodomo-timer/" data-lity class="project"><img src="img/pomodomo.PNG" alt="Pomodomo Timer"></a>
 		</div><!-- ROW 1 END -->
 	</div>
 
 		<!-- ROW 2 -->
 	<div class="row">
 		<div class="project left-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="https://michaelgee22.github.io/javascript-calculator/" data-lity class="project-img"><img src="img/calc.PNG" alt="JavaScript Calculator"></a>
 		</div>
 
 		<div class="project center-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="https://michaelgee22.github.io/tic-tac-toe/" data-lity class="project-img"><img src="img/tic-tac-toe.PNG" alt="Tic Tac Toe Project"></a>
 		</div>
 
 		<div class="project right-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="#" class="project-img"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
 		</div><!-- ROW 2 END -->
 	</div>
 
 		<!-- ROW 3 -->
 	<div class="row">
 		<div class="project left-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="#" class="project-img"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
 		</div>
 
 		<div class="project center-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="#" class="project-img"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
 		</div>
 
 		<div class="project right-project">
-			<a href="#" class="project"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
+			<a href="#" class="project-img"><img src="img/Coming_Soon.jpg" alt="Project Coming Soon"></a>
 		</div><!-- ROW 3 END -->
 	</div>
 
@@ -124,7 +129,7 @@
 	<p style="padding-bottom: 15px" class="section-intro">Have any questions or interested in hiring me? Please fill out this short email form to get in touch!</p>
 
 	<div id="email-form">
-		<form id="contactMe" action="MAILTO:michaelgee221@gmail.com" method="post" enctype="text/plain">
+		<form id="contactMe" action="#" method="post" enctype="text/plain">
 			<input type="text" name="name" placeholder="Name" id="top-input">
 			<input type="email" name="email" placeholder="Email">
 			<textarea name="message" rows="8" form="contactMe" placeholder="Type Your Message Here..."></textarea>
@@ -155,6 +160,8 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+	<!-- lity lightbox plugin -->
+	<script src="scripts/lity.min.js"></script>
   <!-- CUSTOM JS -->
 <script type="text/javascript" src="scripts/scripts.js"></script>
 </body>
