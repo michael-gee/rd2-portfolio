@@ -101,39 +101,6 @@ ul.topnav.responsive li {
 	display: none;
 }
 
-/* NAVIGATION MEDIA QUERIES */
-
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:807px) {
-  ul.topnav li:not(:last-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:807px) {
-  ul.topnav.responsive {
-  	position: relative;
-  	width: 100%;
-  }
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-right: 55px;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: center;
-  }
-}
-
 /* NAV TITLE (NAME) */
 .nav-title {
 	font-size: 4.0em;
@@ -219,41 +186,6 @@ em {
 	padding: 10px;
 }
 
-/* BIO SECTION MEDIA QUERIES */
-@media (min-width: 1200px) {
-	#bio-pic {
-		margin-right: 5%;
-	}
-}
-
-@media (max-width: 1065px) {
-	#bio-pic {
-		margin-right: 2%;
-		width: 350px;
-		padding-top: 80px;
-	}
-}
-
-@media (max-width:885px) {
-	.bio {
-		text-align: center;
-	}
-
-	#bio-text {
-		width: 100%;
-		padding: 0;
-		float: none;
-	}
-
-	#bio-pic {
-		width: 350px;
-		padding:0;
-		padding-bottom: 25px;
-		float: none;
-	}
-}
-
-
 /* PORTFOLIO SECTION */
 .portfolio {
 	overflow: hidden;
@@ -291,8 +223,6 @@ em {
     margin-right: 43px;
 }
 
-/* PORTFOLIO SECTION MEDIA QUERIES */
-
 
 /* CONTACT SECTION */
 .contact {
@@ -310,6 +240,7 @@ input {
 	padding: 15px;
 	margin: 15px;
 	font-size: 1.8em;
+	box-sizing: border-box;
 	text-align: center;
 }
 
@@ -320,14 +251,16 @@ textarea {
 	margin: 15px;
 	font-size: 1.8em;
 	text-align: center;
+	box-sizing: border-box;
 	font-family: "Raleway", arial;
 }
 
-
 #submit {
-	margin: 0 auto;
+	margin: 0;
+	margin-left: 15px;
 	margin-bottom: 70px;
 	cursor: pointer;
+	box-sizing: border-box;
 	background-color: lightgrey;
 	border-radius: 10px;
 }
@@ -355,12 +288,106 @@ footer {
 	padding-top: 17px;
 }
 
+/* MEDIA QUERIES */
+
+/* NAVIGATION MEDIA QUERIES */
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:807px) {
+  ul.topnav li:not(:last-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:807px) {
+  ul.topnav.responsive {
+  	position: relative;
+  	width: 100%;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 55px;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* BIO SECTION MEDIA QUERIES */
+@media screen and (min-width: 1200px) {
+	#bio-pic {
+		margin-right: 5%;
+	}
+}
+
+@media screen and (max-width: 1065px) {
+	#bio-pic {
+		margin-right: 2%;
+		width: 350px;
+		padding-top: 80px;
+	}
+}
+
+@media screen and (max-width:885px) {
+	.bio {
+		text-align: center;
+	}
+
+	#bio-text {
+		width: 100%;
+		padding: 0;
+		float: none;
+	}
+
+	#bio-pic {
+		width: 350px;
+		padding:0;
+		padding-bottom: 25px;
+		float: none;
+	}
+}
+
+/* PORTFOLIO SECTION MEDIA QUERIES */
+@media screen and (max-width: 750px) {
+	.row {
+		padding-bottom: 0;
+	}
+
+	.left-project {
+		padding-bottom: 10px;
+	  float:none;
+	  width: 90%;
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+	.center-project {
+		padding-bottom: 10px;
+	  margin:0 auto;
+	  width: 90%;
+	}
+
+	.right-project {
+		padding-bottom: 10px;
+	  float:none;
+	  width: 90%;
+		margin: 0 auto;
+	}
+}
+
 /* FOOTER ICONS MEDIA QUERIES */
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
 	.social {
 		padding: 5px;
 	}
 }
-
-
-/* FOR FUTURE - WHEN I GET TO FOOTER USE FONT AWEOMSE ICONS CHANGE COLOR AND :HOVER COLOR TO MAKE THEM LOOK GOOD */
