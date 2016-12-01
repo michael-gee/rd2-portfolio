@@ -62,6 +62,7 @@ nav {
 	position: fixed;
 	transition-duration: 1s;
 	width: 100%;
+	background-color: rgba(0,0,0, 0.7);
 	color: white;
 	padding: 15px;
 }
@@ -102,6 +103,7 @@ ul.topnav.responsive li {
 .nav-title {
 	font-size: 3.7em;
 	padding: 5px;
+	padding-top: 12px;
 	padding-left:10px;
 	float: left;
 }
