@@ -357,7 +357,7 @@ footer {
 }
 
 /* PORTFOLIO SECTION MEDIA QUERIES */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
 	.row {
 		padding-bottom: 0;
 	}
