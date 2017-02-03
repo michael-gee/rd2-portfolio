@@ -5,4 +5,4 @@ To begin with I started created the front end of the Portfolio using HTML/CSS/Ja
 
 I will not be updating this project due to moving on to building my front end with Polymer components. New portfolio will be created soon.
 
-Link: https://michaelgee22.github.io/portfolio/
+https://michaelgee22.github.io/rd2-portfolio/
